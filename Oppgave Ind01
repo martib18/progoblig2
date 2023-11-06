@@ -1,0 +1,8 @@
+fun nordic-flag(corner, cross-border, cross-core):
+  frame(
+    overlay-xy(rectangle(220, 20, "solid", cross-core), 0,-75,
+      overlay-xy(rectangle(20, 160, "solid", cross-core), -80,0,
+        overlay-xy(rectangle(220, 40, "solid", cross-border), 0,-65,
+          overlay-xy(rectangle(40, 160, "solid", cross-border), -70,0,
+            rectangle(220, 160, "solid", corner))))))
+end
